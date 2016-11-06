@@ -12,7 +12,7 @@
     "type": "git"
   },
   "scripts": {
-    "start": "live-server -p:8080"
+    "start": "live-server"
   },
   "author": "Sander Elias <sanderelias+git@gmail.com>",
   "license": "MIT"
