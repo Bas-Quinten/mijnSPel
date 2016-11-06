@@ -2,25 +2,22 @@
   box-sizing:border-box
 }    
 h1 {
-      color: darkseagreen;
+      color: #bada55;
     }
     body {
       height: 100%;
       width: 100%;
     }
-    html {
+    html: {
       height: 100%;
       width: 100%;
     }
     .speler {
       position: relative;
-      background-image: url('https://hydra-media.cursecdn.com/minecraft.gamepedia.com/thumb/e/ed/Mob1.png/166px-Mob1.png?version=8c69aab06710e843a6c2c7e4ddc4621c');
-      background-size: 100px 100px;
-      background-repeat: no-repeat;
       width: 100px;
       height: 100px;
-      left: calc(25% - 50px);
-      color: red;
+      left:  100px;
+      top:   391px
     }
  .border-button {
       width: 98%;
@@ -40,8 +37,21 @@ h1 {
       position: relative;
       width: 100px;
       height: 100px;
-      left: calc(50% - 150px);
+      
     }
+    .o1 {
+left: -5px;
+      top:  -5px
+    }
+    .o2 {
+      left: -5px;
+      top:  391px
+    }
+    .o3{
+      left: 95px;
+      top:  195.5px
+    }
+
 .spel{
   width: 98%;
   height:500px;
