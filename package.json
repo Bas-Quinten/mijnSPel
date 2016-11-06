@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "eslint": "^3.9.1"
+  },
+  "name": "mijnSPel",
+  "version": "1.0.0",
+  "description": "Dit is ons spelletje",
+  "main": "index.html",
+  "repository": {
+    "url": "https://github.com/Bas-Quinten/mijnSPel.git",
+    "type": "git"
+  },
+  "author": "Sander Elias <sanderelias+git@gmail.com>",
+  "license": "MIT"
+}
