@@ -1,0 +1,27 @@
+{
+  "name": "mijnspel",
+  "version": "1.0.0",
+  "description": "Dit is een repo om mee te spelen",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify spel.js -o builtgame.js",
+    "serve": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bas-Quinten/mijnSPel.git"
+  },
+  "author": "Bas-Quinten",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bas-Quinten/mijnSPel/issues"
+  },
+  "homepage": "https://github.com/Bas-Quinten/mijnSPel#readme",
+  "dependencies": {
+    "browserify": "^13.1.1",
+    "eslint": "^3.9.1",
+    "live-server": "^1.1.0",
+    "voxel-hello-world": "^0.6.0"
+  }
+}
