@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "eslint": "^3.9.1"
+    "eslint": "^3.9.1",
+    "live-server": "^1.1.0"
   },
   "name": "mijnSPel",
   "version": "1.0.0",
@@ -9,6 +10,9 @@
   "repository": {
     "url": "https://github.com/Bas-Quinten/mijnSPel.git",
     "type": "git"
+  },
+  "scripts": {
+    "start": "live-server -p:8080"
   },
   "author": "Sander Elias <sanderelias+git@gmail.com>",
   "license": "MIT"
