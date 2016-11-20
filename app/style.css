@@ -74,7 +74,7 @@ html {
 }
 
 #score {
-  border: 2px red;
-  height: 2px;
-  width: 3px;
+  border: 2px solid red;
+  height: 25px;
+  width: 1000px;
 }
