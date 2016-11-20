@@ -20,11 +20,11 @@
   function moveTo(plusX, PlusY) {
     return function () {
       let pos = speler.getBoundingClientRect();
-      console.table(plusX, pos)
-      let veldtop = document.querySelector('.spel').getBoundingClientRect().top
+      let veld = document.querySelector('.spel').getBoundingClientRect()
+      let veldtop = veld.top
       //let pos = (speler.offsetTop - speler.scrollTop + speler.clientTop)
-      console.log(pos)
-      speler.style.top = pos.top - veldtop + plusX + "px"
+      console.table([pos,veld])
+      speler.style.top = ((pos.top - veldtop) + plusX) + "px"
       console.log('hi', speler.style.top);
     }
   }
@@ -35,13 +35,10 @@
   }
 
   function scorebord() {
-    console.log('score', goud)
     let bord = document.querySelector("#score")
-    bord.innerHTML = "goud:" + goud
+    bord.innerHTML = goud
   }
-  console.log('hi')
   document.querySelectorAll(".ore").forEach(ore => {
-    console.log('added to', ore)
     ore.addEventListener('click', klikGoud)
   })
 
