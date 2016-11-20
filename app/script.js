@@ -1,5 +1,6 @@
 (function () {
   let goud = 0
+  spelerPos = [5,100]
 
   let speler = document.querySelector('.speler');
   [...document.querySelectorAll('.button')].forEach((button, ind) => {
@@ -12,6 +13,12 @@
       case 1:
         x = -5;
         break;
+      case 2:
+        y = -5;
+        break; 
+      case 3:
+        y = 5;
+        break;        
     }
     button.addEventListener('click', moveTo(x, y));
   })
@@ -19,12 +26,16 @@
 
   function moveTo(plusX, PlusY) {
     return function () {
-      let pos = speler.getBoundingClientRect();
-      let veld = document.querySelector('.spel').getBoundingClientRect()
-      let veldtop = veld.top
-      //let pos = (speler.offsetTop - speler.scrollTop + speler.clientTop)
-      console.table([pos,veld])
-      speler.style.top = ((pos.top - veldtop) + plusX) + "px"
+      if (plusX) {
+        spelerPos[0] += plusX
+      }
+      if (PlusY) {
+        spelerPos[1] += PlusY
+      }
+
+      speler.style.top = spelerPos[0] + "px"
+      speler.style.left = spelerPos[1] + "px"
+      
       console.log('hi', speler.style.top);
     }
   }
