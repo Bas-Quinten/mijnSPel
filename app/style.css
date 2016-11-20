@@ -74,5 +74,8 @@ h1 {
   width: auto;
 }
 #score {
- top: -5px;
+  display: inline-block;
+ height: 45px;
+ vertical-align: middle;
+ font-size: 25px;
 }
